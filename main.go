@@ -245,14 +245,11 @@ func showStats(output io.Writer, client *ssh.Client) {
 	fmt.Fprintf(output,
 		`%s%s%s%s up %s%s%s
 
-Load:
-    %s%s %s %s%s
+Load: %s%s %s %s%s
 
-CPU:
-    %s%.2f%s%% user, %s%.2f%s%% sys, %s%.2f%s%% nice, %s%.2f%s%% idle, %s%.2f%s%% iowait, %s%.2f%s%% hardirq, %s%.2f%s%% softirq, %s%.2f%s%% guest
+CPU: %s%.2f%s%% user, %s%.2f%s%% sys, %s%.2f%s%% nice, %s%.2f%s%% idle, %s%.2f%s%% iowait, %s%.2f%s%% hardirq, %s%.2f%s%% softirq, %s%.2f%s%% guest
 
-Processes:
-    %s%s%s running of %s%s%s total
+Processes: %s%s%s running of %s%s%s total
 
 Memory:
     free    = %s%s%s
